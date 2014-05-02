@@ -1,3 +1,4 @@
+// The glory is for GOD
 /*
 	Author:			Reynaldo Lázaro Aguilar Casajuana
 	
