@@ -1,3 +1,4 @@
+// The glory is for GOD
 /*
 	Name:			Reynaldo Lázaro Aguilar Casajuana
 	
