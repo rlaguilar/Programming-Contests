@@ -9,48 +9,25 @@
 	
 	Topic:			Strings - Aho Corasick
 	
-	Description: 	go[st][c] = Transition from st with symbol c.
-					slink[st] = State of largest length that is suffix of st.
-					final[st] = Indicates if st is a terminal st.
-					next[st] = Next node to st in the suffix links path to the root.
-					MAXS = Maximum number of nodes in the trie.
-					K = Size of alphabet.
+	Description: 		go[st][c] = Transition from st with symbol c.
+				slink[st] = State of largest length that is suffix of st.
+				final[st] = Indicates if st is a terminal st.
+				next[st] = Next node to st in the suffix links path to the root.
+				MAXS = Maximum number of nodes in the trie.
+				K = Size of alphabet.
 					
 	
 	Complexity:		add_pattern = O(|p|)		
-					build_ac = O(MAXS * K)
-					match = O(|t| + number of ocurrences)
+				build_ac = O(MAXS * K)
+				match = O(|t| + number of ocurrences)
 	
   	Verified:		TIMUS 	1158 - Censored!   
-  					SPOJ 	2175 - EMOTICON (3rd best solution)
+  				SPOJ 	2175 - EMOTICON (3rd best solution)
 */
 
-#include <algorithm>
-#include <complex>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <ctime>
-#include <iomanip>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <vector>
+#include <bits/stdc++.h>
 
-#ifdef RLAC
-	#define DEB(a)			clog << __LINE__ << ": " << #a << " = " << (a) << endl
-	#define DEB2(a, b)		DEB(a); DEB(b)
-	#define OUT(a, n)		for (int J = 0; J < (n); ++J)	clog << (a)[J] << " \n"[J == (n) - 1];
-	#define OUT2(a, n, m)	{	DEB(a);	for (int I = 0; I < (n); ++I)	OUT(a[I], m);	}
-	#define NAME			"AC"
-#else
-	#define DEB(a)
-	#define DEB2(a, b)
-	#define OUT(a, n)
-	#define OUT2(a, n, m)
-#endif
+#define DB(a) cerr << __LINE__ << ": " << #a << " = " << (a) << endl;
 
 using namespace std;
 
