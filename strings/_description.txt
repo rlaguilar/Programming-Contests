@@ -1,1 +1,0 @@
-This folder contains all my implementations of string algorithms.
