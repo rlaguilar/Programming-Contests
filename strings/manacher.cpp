@@ -8,42 +8,18 @@
 	
 	Topic:			Strings - Manacher
 	
-	Description: 	rad[i] = If i is odd, it's the largest even palindrome centered at position i / 2.
-							 Otherwise, it's the size of the largest odd palindrome centered at 
-							 position i / 2.
+	Description: 		rad[i] = If i is odd, it's the largest even palindrome centered at position i / 2.
+				Otherwise, it's the size of the largest odd palindrome centered at position i / 2.
 	
 	Complexity:		build_rad = O(N)					
-					is_palindrome = O(1)	
+				is_palindrome = O(1)	
 	
   	Verified:		TIMUS 1937. Davy Jones’s Organ (Best solution)
 */
 
-#include <algorithm>
-#include <complex>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <ctime>
-#include <iomanip>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <set>
-#include <string>
-#include <vector>
+#include <bits/stdc++.h>
 
-#ifdef RLAC
-	#define DEB(a)			clog << __LINE__ << ": " << #a << " = " << (a) << endl
-	#define DEB2(a, b)		DEB(a); DEB(b)
-	#define OUT(a, n)		for (int J = 0; J < (n); ++J)	clog << (a)[J] << " \n"[J == (n) - 1];
-	#define OUT2(a, n, m)	{	DEB(a);	for (int I = 0; I < (n); ++I)	OUT(a[I], m);	}
-	#define NAME			"manacher"
-#else
-	#define DEB(a)
-	#define DEB2(a, b)
-	#define OUT(a, n)
-	#define OUT2(a, n, m)
-#endif
+#define DB(a) cerr << __LINE__ << ": " << #a << " = " << (a) << endl;
 
 using namespace std;
 
