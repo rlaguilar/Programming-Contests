@@ -1,4 +1,4 @@
-// The glory if for GOD
+// The glory is for GOD
 
 // Solution to TIMUS 1553: Caves and tunnels
 
