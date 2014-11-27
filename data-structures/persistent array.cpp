@@ -6,7 +6,7 @@
 
 using namespace std;
 
-/*  Begin persistent array  */
+/*  <persistent array>  */
 const int MAXN = 1e5 + 5, MAXQ = MAXN, MAXS = 1e8;
 int lch[MAXS], rch[MAXS], cnt;
 
@@ -49,7 +49,7 @@ struct p_array
         return i < m ? get(lch[v], m, i) : get(rch[v], n - m, i - m);
     }
     
-    //Devuelve el valor del array en la posición i.
+    // get the value at potition i.
     int operator [] (int i)
     {
         return get(root, n, i);
@@ -67,14 +67,14 @@ struct p_array
         return new_node(set(lch[v], m, i, x), set(rch[v], n - m, i - m, x));
     }
     
-    //Assigna a la posición i del array el valor x.
+    // get the resultant array of setting value x to position i.
     p_array set (int i, int x)
     {
         return p_array(n, set(root, n, i, x));
     }
-}array[MAXQ];    //array[v] = array que representa la versión # v de la estructura.
+}root[MAXQ];    // root[v] = root of the tree that represent the version # v of the array.
 
-/*  End persistent array    */
+/*  </persistent array>    */
 
 int n, k, a, b, v, data[MAXN];
 char c;
@@ -118,19 +118,19 @@ int main ()
 
     cin >> n >> k;
     memset(data, -1, sizeof data);
-    array[0] = p_array(data, n + 1);
+    root[0] = p_array(data, n + 1);
     
     for (int i = 1; i <= k; ++i)
     {
         cin >> c >> v >> a >> b;
         
         if (c == '+')
-            array[i] = union_set(array[v], a, b);
+            root[i] = union_set(root[v], a, b);
         else
         {            
-            int id_b = find_set(array[v], b);
-            int id_a = find_set(array[v], a);
-            cout << ((id_a == id_b) ? "Si" : "No") << '\n';
+            int id_b = find_set(root[v], b);
+            int id_a = find_set(root[v], a);
+            cout << ((id_a == id_b) ? "YES" : "NO") << '\n';
         }    
     }    
  
