@@ -1,4 +1,4 @@
-// The glory if for GOD
+// The glory is for GOD
 
 #include <bits/stdc++.h>
 
