@@ -5,10 +5,11 @@
 	Author: rlac
 	Date: 22/11/12 16:37
 	Description: Fast Fourier Transform (FFT)
-	Verified:	SPOJ 31. Fast Multiplication
-				SPOJ 235. Very Fast Multiplication
-				COJ  1760 - Triple Sums
-				SPOJ 8372 - TSUM
+	Verified:	
+	SPOJ 31. Fast Multiplication
+	SPOJ 235. Very Fast Multiplication
+	COJ  1760 - Triple Sums
+	SPOJ 8372 - TSUM
 */
 
 #include <bits/stdc++.h>
