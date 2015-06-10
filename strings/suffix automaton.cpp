@@ -9,19 +9,20 @@
 	Topic:			Strings - Suffix Automaton
 	
 	Description: 	go[st][c] = Transition from st with symbol c.
-					slink[st] = State of largest length that is suffix of st.
-					final[st] = Indicates if st is a terminal st.
-					length[st] = Length of the largest string that corresponds to st.
-					lcs = Longest common substring in strings s and t.
-					MAXS = Maximum number of states in the automaton.
-					K = Size of alphabet.
+			slink[st] = State of largest length that is suffix of st.
+			final[st] = Indicates if st is a terminal state.
+			length[st] = Length of the largest string that corresponds to st.
+			last = state that corresponds to the whole string that have been processed.
+			lcs = Longest common substring in strings s and t.
+			MAXS = Maximum number of states in the automaton.
+			K = Size of alphabet.
 					
 	
-	Complexity:		build = O(NK)					
-					lcs   = O(N)		
+	Complexity:	build = O(NK)					
+			lcs   = O(N)		
 	
-  	Verified:		TIMUS 1517. Freedom of Choice (Best solution)
-  					TIMUS 1937. Davy Jones’s Organ (Best solution)
+  	Verified:	TIMUS 1517. Freedom of Choice (Best solution)
+  			TIMUS 1937. Davy Jones’s Organ (Best solution)
 */
 
 #include <bits/stdc++.h>
